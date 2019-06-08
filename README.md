@@ -1,8 +1,11 @@
-# Check IAM Permissions
+# Check IAM Role/User/Group Permissions
 
 This script performs a simular function as AWS Web Console's
 [Access Advisor](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor.html)
 but instead generates CSV formatted report containing the identifying Name, Creation Date, Last Used Date, and Unused Permissions
+
+These reports are useful for establish a more secure environment utilizing 
+[least privilege principle](https://en.wikipedia.org/wiki/Principle_of_least_privilege).
 
 ---
 
@@ -29,7 +32,7 @@ Without arguments, all three reports will be generated with the file names
 `group_permissions.csv`.
 
 
-The script also takes the standard AWS authentication options `--profile`, `--region`, `--key` & '--secret'
+The script also takes the standard AWS authentication options `--profile`, `--region`, `--key` & `--secret`
 
 ---
 
