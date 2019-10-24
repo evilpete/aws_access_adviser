@@ -46,4 +46,6 @@ ec2-role-batch|20170927 20:54:40|20171010 21:00:00|dynamodb sqs
 lambda-role|20170804 20:49:15|Never|cloudwatch elasticache elasticloadbalancing logs rds
 ec2-role-jenkins-slave|20170915 20:25:23|20190608 02:48:00|dynamodb ec2
 
+---
 
+For a much more powerful tool check out [policy_sentry](https://github.com/salesforce/policy_sentry)
