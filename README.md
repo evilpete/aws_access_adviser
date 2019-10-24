@@ -7,6 +7,8 @@ but instead generates CSV formatted report containing the identifying Name, Crea
 These reports are useful for establish a more secure environment utilizing 
 [least privilege principle](https://en.wikipedia.org/wiki/Principle_of_least_privilege).
 
+( For a much more powerful tool check out [policy_sentry](https://github.com/salesforce/policy_sentry) )
+
 ---
 
 ### Requirements
@@ -18,6 +20,14 @@ Requires the [boto3](https://github.com/boto/boto3 "AWS SDK for Python") library
     $ pip install boto3
 ```
 
+The following [AWS IAM permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor.html#access_policies_access-advisor-permissions-iam) are needed
+
+```
+  iam:GenerateServiceLastAccessedDetails
+  iam:GetServiceLastAccessedDetails
+  iam:GetServiceLastAccessedDetailsWithEntities
+  iam:ListPoliciesGrantingServiceAccess
+```
 ---
 
 ### Usage
@@ -48,4 +58,3 @@ ec2-role-jenkins-slave|20170915 20:25:23|20190608 02:48:00|dynamodb ec2
 
 ---
 
-For a much more powerful tool check out [policy_sentry](https://github.com/salesforce/policy_sentry)
